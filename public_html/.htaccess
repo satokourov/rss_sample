@@ -1,0 +1,15 @@
+# PHPの拡張子設定
+AddType application/x-httpd-php .php
+
+# 読み込みパス
+php_value include_path ".:/home/******/library/pear:/home/******/common"
+
+# エラーログ
+php_value error_reporting 30711
+php_flag display_errors on
+php_flag log_errors on
+php_value log_errors_max_len 0
+
+php_value memory_limit 256M
+php_value post_max_size 64M
+php_value upload_max_filesize 32M
